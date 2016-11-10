@@ -1,0 +1,26 @@
+{
+  "name": "proxy-api-ceiba",
+  "version": "0.0.1",
+  "description": "Proxy user data access for the Ceiba's data-portal API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/I2DHumboldt/proxy-API-Ceiba.git"
+  },
+  "author": "Andrés Castillo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/I2DHumboldt/proxy-API-Ceiba/issues"
+  },
+  "homepage": "https://github.com/I2DHumboldt/proxy-API-Ceiba",
+  "private": true,
+  "dependencies": {
+    "express": "^4.12.4",
+    "bluebird": "^2.9.14",
+    "querystring":"0.2.0",
+    "body-parser":"^1.12.4"
+  }
+}
