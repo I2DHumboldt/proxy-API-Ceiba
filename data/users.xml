@@ -1,0 +1,14 @@
+<users>
+  <user email="user@gmail.com" firstname="user" lastname="guess" role="User" lastLogin="2015-09-11 16:06:26.38 UTC">
+    <password>goodpass</password>
+  </user>
+  <user email="guess@humboldt.org.co" firstname="guess" lastname="humboldt" role="User" lastLogin="2015-09-11 16:06:26.38 UTC">
+    <password>goodpass</password>
+  </user>
+  <user email="humboldt@humboldt.org.co" firstname="humboldt" lastname="humboldt" role="User" lastLogin="2015-09-11 16:06:26.38 UTC">
+    <password>goodpass</password>
+  </user>
+  <user email="humboldtadmin@humboldt.org.co" firstname="humboldt" lastname="admin" role="Admin" lastLogin="2015-09-11 16:06:26.38 UTC">
+    <password>goodpass</password>
+  </user>
+</users>
