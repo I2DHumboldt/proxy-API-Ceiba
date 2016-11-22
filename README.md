@@ -1,6 +1,6 @@
 # proxy-API-Ceiba
 
-Proxy user data access for the Ceiba's data-portal API
+Proxy user data access for the Ceiba's data-portal API. It includes a login app based on the list of users provided by the Ceiba's IPT.
 
 # Setup
 ```
