@@ -12,7 +12,7 @@ Proxy para el control de acceso a la información para el API-Ceiba. Esta aplica
   nmp start
  ```
  
- ## Run with pm2
+## Run with pm2
  ```
   git clone https://github.com/I2DHumboldt/proxy-API-Ceiba.git
   cd proxy-API-Ceiba
@@ -21,7 +21,7 @@ Proxy para el control de acceso a la información para el API-Ceiba. Esta aplica
   
  ```
  
- ## Configuración
+## Configuración
  
  La configuración de la aplicación se encuentra en el archivo `src/config.json`. En este archivo se especifica el puerto en el cual debe correr el proxy-api-ceiba (`port`), el host del API que debe contactar (`api_server`), la página de login que debe mostrar la aplicación (`login`), la página sobre la que debe redireccionar una vez que se autentique (`login_redirect`) y la ruta al archivo con los datos para la autenticación (`login_users`).
 
