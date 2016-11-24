@@ -43,7 +43,7 @@ Para probar la autenticación y el control de acceso a los datos del API, debe p
 ```
 localhost:3000/proxy/api/v1.5/occurrence/count?isGeoreferenced=false
 ```
-Si aún no está logeado, el API debe devolver el conteo de todos los elementos que son de libre acceso.
+Si aún no está autenticado, el API debe devolver el conteo de todos los elementos que son de libre acceso.
 
 Después puede probar haciendo login en el sistema de prueba:
 
