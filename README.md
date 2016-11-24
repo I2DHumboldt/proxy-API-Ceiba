@@ -36,3 +36,22 @@ Ejemplo:
   "login_users": "./data/users.xml"
 }
 ```
+
+## Pruebas
+
+Para probar la autenticación y el control de acceso a los datos del API, debe probar esta consulta en el navegador:
+```
+localhost:3000/proxy/api/v1.5/occurrence/count?isGeoreferenced=false
+```
+Si aún no está logeado, el API debe devolver el conteo de todos los elementos que son de libre acceso.
+
+Después puede probar haciendo login en el sistema de prueba:
+
+```
+localhost:3000/
+```
+En este caso debe ser redireccionado sobre una página de autenticación. Puede probar con el usuario: *humboldtadmin@humboldt.org.co* y el password: *goodpass*, de forma que se encuentre sobre el grupo de acceso **super** que tiene acceso a todos los datos sistema. En este caso la consulta debe retornar el conteo de todos los registros que se encuentre en la base de datos.
+
+```
+localhost:3000/proxy/api/v1.5/occurrence/count?isGeoreferenced=false
+```
