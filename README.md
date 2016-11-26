@@ -13,7 +13,15 @@ Proxy para el control de acceso a la información para el API-Ceiba. Esta aplica
  ```
  
 ## Run with pm2
- ```
+Install pm2
+
+``` bash 
+npm install pm2 -g
+```
+
+Clone the project and start the process
+
+```
   git clone https://github.com/I2DHumboldt/proxy-API-Ceiba.git
   cd proxy-API-Ceiba
   npm install
