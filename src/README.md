@@ -1,6 +1,6 @@
 # Determinación de los permisos de acceso
 
-El portal de datos de Ceiba tiene catálogos con diferentes permisos de acceso. Durane el login en el proxy, el sistema determina el grupo de acceso
+El portal de datos de Ceiba tiene catálogos con diferentes permisos de acceso. Durante el login en el proxy, el sistema determina el grupo de acceso
 al que pertenece el usuario que se está autenticando, siguiendo estas reglas:
   * Si el usuario está registrado en Ceiba y tiene el rol “Admin”, pertenece al grupo de acceso: **“super”**
   * Si el usuario está registrado en Ceiba, y tiene el nombre de usuario del dominio “@humboldt.org.co” pertenece al grupo de acceso: **“humboldt”**
