@@ -11,7 +11,19 @@ const bodyParser = require('body-parser');
 
 app.set('views', __dirname + '/views');
 app.engine('html', require('ejs').renderFile);
-app.use(session({secret: 'ssshhhhh'}));
+
+let sess = {
+    secret: 'not really secret, change me!!',//Change this secret in produccion
+    proxy: true,
+    resave: true,
+    saveUninitialized: true,
+    cookie: {}
+}
+if (app.get('env') === 'production') {
+    app.set('trust proxy', 1) // trust first proxy
+    sess.cookie.secure = true // serve secure cookies
+}
+app.use(session(sess));
 
 app.use(bodyParser.json());       // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
@@ -47,12 +59,6 @@ app.use('/proxy', proxy(_config.api_server, {
         else
             proxyReq.path+='&group=guess';
         return proxyReq;
-    },
-    intercept: function(rsp, data, req, res, callback) {
-        if(liveSession && liveSession.group) {
-            data = JSON.parse(data.toString('utf8'));
-            callback(null, JSON.stringify(data));
-        }
     }
 }));
 
