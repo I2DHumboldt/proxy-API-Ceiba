@@ -4,7 +4,7 @@
   "description": "Proxy user data access for the Ceiba's data-portal API",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js",
+    "start": "./node_modules/.bin/nodemon -e js src/index.js",
     "test": "npm run test-mocha",
     "test-mocha": "mocha --compilers js:babel-register --require should --reporter mocha-better-spec-reporter --recursive src/**/__tests__/**/*.js",
     "test-cov": "istanbul cover _mocha -- --compilers js:babel-register --require should --reporter dot --recursive src/**/__tests__/**/*.js",
@@ -35,7 +35,8 @@
     "istanbul": "^1.0.0-alpha",
     "mocha": "^3.0.2",
     "mocha-better-spec-reporter": "^3.0.2",
-    "should": "^11.1.0"
+    "should": "^11.1.0",
+    "nodemon": "^1.11.0"
   },
   "dependencies": {
     "express": "^4.12.4",
