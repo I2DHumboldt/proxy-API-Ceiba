@@ -13,7 +13,7 @@ app.set('views', __dirname + '/views');
 app.engine('html', require('ejs').renderFile);
 
 let sess = {
-    secret: 'not really secret, change me!!',//Change this secret in produccion
+    secret: 'not really secret, change me2!!',//Change this secret in produccion
     proxy: true,
     resave: true,
     saveUninitialized: true,
