@@ -2,7 +2,7 @@
   apps : [{
     name       : "proxy-api-ceiba",
     script     : "./src/index.js",
-    instances  : 2,
+    instances  : 1,
     exec_mode  : "cluster"
   }]
 }
